@@ -23,13 +23,13 @@ import java.nio.charset.StandardCharsets;
  *
  * 非线程安全的
  */
-public class ByteBufferDemo {
-    static final Logger log = LoggerFactory.getLogger(ByteBufferDemo.class);
+public class _1_ByteBufferDemo {
+    static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
     public static void main(String[] args) {
-//        methodReadData();
-//        writeData();
-        byteToString();
-        stringToByte();
+        readFile();
+////        writeData();
+//        byteToString();
+//        stringToByte();
     }
 
     private static void stringToByte() {
@@ -50,19 +50,23 @@ public class ByteBufferDemo {
         ByteBufferUtil.debugAll(buffer);
     }
 
-    private static void methodReadData() {
-        //创建方法   堆内存创建方法
+    private static void readFile() {
+        //创建方法   堆内存创建方法  缓存区
         ByteBuffer buffer = ByteBuffer.allocate(10);
         try (RandomAccessFile file = new RandomAccessFile("hello/demo.txt","rw")){
+            //得到通道
             FileChannel channel = file.getChannel();
             do{
+                //channel读取，写入buffer
                 int len = channel.read(buffer);
                 log.info("字节长度 {}",len);
                 if (len == -1){
                     break;
                 }
+                //读取模式
                 buffer.flip();
                 ByteBufferUtil.debugAll(buffer);
+                //一个一个读取
                 while (buffer.hasRemaining()){
                     log.info("value{}",(char)buffer.get());
                 }

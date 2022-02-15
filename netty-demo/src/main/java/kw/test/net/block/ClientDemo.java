@@ -1,19 +1,16 @@
 package kw.test.net.block;
 
-import kw.test.buffer.ByteBufferDemo;
+import kw.test.buffer._1_ByteBufferDemo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.Channel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 
 public class ClientDemo {
-    static final Logger log = LoggerFactory.getLogger(ByteBufferDemo.class);
+    static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
     public static void main(String[] args) throws Exception {
         SocketChannel channel = SocketChannel.open();
         channel.connect(new InetSocketAddress("localhost",8811));
