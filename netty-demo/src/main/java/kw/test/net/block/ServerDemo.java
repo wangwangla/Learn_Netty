@@ -12,12 +12,15 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
+/**
+ * block 阻塞的
+ * 等待连接的时候进行阻塞
+ */
 public class ServerDemo {
     static final Logger log = LoggerFactory.getLogger(ByteBufferDemo.class);
     public static void main(String[] args) throws Exception {
         ByteBuffer buffer = ByteBuffer.allocate(16);
         ServerSocketChannel channel = ServerSocketChannel.open();
-        channel.configureBlocking(false);
         channel.bind(new InetSocketAddress(8811));
         while (true){
             log.info("connecting -------------------");
@@ -26,6 +29,7 @@ public class ServerDemo {
             buffer.flip();
             ByteBufferUtil.debugAll(buffer);
             buffer.clear();
+
             log.info("data -----------");
         }
     }
