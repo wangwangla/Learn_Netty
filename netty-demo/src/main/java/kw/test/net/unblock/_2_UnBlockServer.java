@@ -8,18 +8,26 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
-public class UnBlockServer {
+/***
+ * 一个线程 不断的进步遍历
+ *
+ *
+ * 所以使用selector  事件处理
+ */
+public class _2_UnBlockServer {
     public static void main(String[] args) throws IOException {
+        ByteBuffer buffer = ByteBuffer.allocate(10);
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.configureBlocking(false);
         serverSocketChannel.bind(new InetSocketAddress(8811));
         while (true) {
-            SocketChannel accept = serverSocketChannel.accept();
-            if (accept!=null) {
-                ByteBuffer buffer = ByteBuffer.allocate(10);
-                accept.read(buffer);
-                buffer.flip();
-                ByteBufferUtil.debugAll(buffer);
+            SocketChannel channel = serverSocketChannel.accept();  //不等待   while会一直空转
+            if (channel!=null) {
+                int read = channel.read(buffer);
+                if (read>0) {
+                    buffer.flip();
+                    ByteBufferUtil.debugAll(buffer);
+                }
             }
         }
     }

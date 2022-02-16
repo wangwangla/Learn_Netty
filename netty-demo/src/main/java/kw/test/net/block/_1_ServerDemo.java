@@ -13,6 +13,9 @@ import java.nio.channels.SocketChannel;
 /**
  * block 阻塞的
  * 等待连接的时候进行阻塞
+ *
+ * 阻塞方法每次只能赶一个，只有等有一个干完了才可以干下一个。
+ * 一个线程处理一个连接，确实存在问题
  */
 public class _1_ServerDemo {
     static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
@@ -30,7 +33,6 @@ public class _1_ServerDemo {
             buffer.flip();
             ByteBufferUtil.debugAll(buffer);
             buffer.clear();
-
             log.info("data -----------");
         }
     }

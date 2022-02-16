@@ -9,14 +9,14 @@ import java.net.SocketAddress;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 
-public class ClientDemo {
+public class _1_ClientDemo {
     static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
     public static void main(String[] args) throws Exception {
         SocketChannel channel = SocketChannel.open();
         channel.connect(new InetSocketAddress("localhost",8811));
         SocketAddress address = channel.getLocalAddress();
         log.trace("connect");
-        channel.write(StandardCharsets.UTF_8.encode("heelo"));
+        channel.write(StandardCharsets.UTF_8.encode("hello"));
         System.in.read();
     }
 }
