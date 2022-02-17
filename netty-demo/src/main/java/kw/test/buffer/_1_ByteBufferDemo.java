@@ -22,6 +22,23 @@ import java.nio.charset.StandardCharsets;
  *
  *
  * 非线程安全的
+ *
+ *
+ * byteBuffer 有三个中套参数  position  limit  cap
+ *
+ * (1)写模式：从哪里开始写    clear   compect
+ * clear从头开始
+ * compect从为读取位置开始
+ *
+ * position就根据使用方法的不同设置不同的位置
+ *
+ * limit 为最大位置
+ *
+ *
+ * （2）flip读取模式：
+ * 读取模式，position从头开始 0  ；limit是可以读取的最远位置
+ *
+ * （2）
  */
 public class _1_ByteBufferDemo {
     static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
@@ -57,7 +74,7 @@ public class _1_ByteBufferDemo {
             //得到通道
             FileChannel channel = file.getChannel();
             do{
-                //channel读取，写入buffer
+                //channel读取，写入buffer     读取需要一个地方进行临时缓冲
                 int len = channel.read(buffer);
                 log.info("字节长度 {}",len);
                 if (len == -1){
