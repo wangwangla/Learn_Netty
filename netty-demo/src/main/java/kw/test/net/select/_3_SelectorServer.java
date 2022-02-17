@@ -2,10 +2,8 @@ package kw.test.net.select;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.nio.channels.SelectableChannel;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
+import java.nio.ByteBuffer;
+import java.nio.channels.*;
 import java.util.Iterator;
 
 public class _3_SelectorServer {
@@ -60,19 +58,66 @@ public class _3_SelectorServer {
 
 
 
+//                连接  关闭
+//                正常断开   会发送一个-1
+//                异常断开  异常断开会抛出异常
 
 
-                ServerSocketChannel channel = (ServerSocketChannel) next.channel();
-                channel.accept();
-                SelectionKey register1 = channel.register(selector, 0, null);
-                register1.interestOps(SelectionKey.OP_READ);
+//
+//                ServerSocketChannel channel = (ServerSocketChannel) next.channel();
+//                channel.accept();
+//                SelectionKey register1 = channel.register(selector, 0, null);
+//                register1.interestOps(SelectionKey.OP_READ);
+
+
+/**
+ *
+ *
+ * 消息边界？？
+ *
+ * 比如发送汉字，一个汉字gdk  3字节
+ * 接收使用4个字节，每次只能接受1个半，不是完整的就会出问题
+ *
+ *
+ *
+ * 沾包   半包
+ *
+ *
+ *
+ * 处理：
+ * 约定长度：可能造成浪费
+ *
+ * 使用特殊分隔符
+ *
+ * 先传输大小，在传输内容
+ *
+ * http1
+ * 类型    长度   内容
+ *
+ * Http2
+ *
+ * 长   类型   内容
+ */
+
 
                 if (next.isAcceptable()){
-
+                    ServerSocketChannel channel = (ServerSocketChannel) next.channel();
+                    channel.accept();
+                    SelectionKey register1 = channel.register(selector, 0, null);
+                    register1.interestOps(SelectionKey.OP_READ);
                 }else if (next.isReadable()){
                     try {
-
+                        SocketChannel channel = (SocketChannel) next.channel();
+                        ByteBuffer allocate = ByteBuffer.allocate(16);
+                        int read = channel.read(allocate);
+                        //正常关闭
+                        if (read == -1){
+                            next.cancel();
+                        }
+                        allocate.flip();
                     }catch (Exception e){
+                        //异常关闭
+                        e.printStackTrace();
                         next.cancel(); //将key删除
                     }
                 }
