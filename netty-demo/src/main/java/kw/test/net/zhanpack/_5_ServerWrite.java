@@ -2,13 +2,15 @@ package kw.test.net.zhanpack;
 
 /**
  * 一次写入大量的数据，无法一次发送完成，
+ * server可以通过读取buffer是不是已经读取完成来判断，不断的进行遍历，问题就是如果
+ * bytebuffer特别大就会造成这个线程堵塞，使其无法处理其他通道。
  *
- *    if (buffer.hasRemaining()) {
+ *  if (buffer.hasRemaining()) {
  *           sc.write(buffer);//一直进行写*
- *     }
- *
+ *  }
  *
  *   这样如果非常大，那么就会一直等待，也无法做其他事情
+ *
  *
  *
  *   改进，修改一下关注的事件

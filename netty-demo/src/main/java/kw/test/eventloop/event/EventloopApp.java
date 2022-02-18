@@ -6,6 +6,9 @@ import io.netty.channel.nio.NioEventLoopGroup;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * eventloop可以处理普通事件，也可以处理定时时间
+ */
 public class EventloopApp {
     public static void main(String[] args) {
         EventLoopGroup group = new NioEventLoopGroup(1);
