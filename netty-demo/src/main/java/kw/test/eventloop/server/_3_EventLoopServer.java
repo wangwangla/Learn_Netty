@@ -6,7 +6,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 
-public class EventLoopServer {
+public class _3_EventLoopServer {
     public static void main(String[] args) {
         new ServerBootstrap()
                 .group(new NioEventLoopGroup())
