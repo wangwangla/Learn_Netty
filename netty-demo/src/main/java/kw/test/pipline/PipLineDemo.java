@@ -24,6 +24,8 @@ public class PipLineDemo {
                             @Override
                             public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
                                 super.channelRead(ctx, msg); //不执行链会断开
+
+//                                ctx执行是由当前向前找 是不是由出栈的
                             }
                         });
                         pipeline.addLast(new ChannelOutboundHandlerAdapter(){

@@ -40,12 +40,12 @@ public class _6_MulitThreadServer {
                 if (key.isAcceptable()) {
                     SocketChannel sc = ssc.accept();
                     sc.configureBlocking(false);
-                    log.debug("connected...{}", sc.getRemoteAddress());
+//                    log.debug("connected...{}", sc.getRemoteAddress());
                     // 2. 关联 selector
-                    log.debug("before register...{}", sc.getRemoteAddress());
+//                    log.debug("before register...{}", sc.getRemoteAddress());
                     // round robin 轮询
                     workers[index.getAndIncrement() % workers.length].register(sc); // boss 调用 初始化 selector , 启动 worker-0
-                    log.debug("after register...{}", sc.getRemoteAddress());
+//                    log.debug("after register...{}", sc.getRemoteAddress());
                 }
             }
         }
@@ -85,7 +85,7 @@ public class _6_MulitThreadServer {
                         if (key.isReadable()) {
                             ByteBuffer buffer = ByteBuffer.allocate(16);
                             SocketChannel channel = (SocketChannel) key.channel();
-                            log.debug("read...{}", channel.getRemoteAddress());
+//                            log.debug("read...{}", channel.getRemoteAddress());
                             channel.read(buffer);
                             buffer.flip();
                             ByteBufferUtil.debugAll(buffer);
