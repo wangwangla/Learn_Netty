@@ -23,6 +23,7 @@ public class _2_UnBlockServer {
         while (true) {
             SocketChannel channel = serverSocketChannel.accept();  //不等待   while会一直空转
             if (channel!=null) {
+                channel.configureBlocking(false);
                 int read = channel.read(buffer);
                 if (read>0) {
                     buffer.flip();

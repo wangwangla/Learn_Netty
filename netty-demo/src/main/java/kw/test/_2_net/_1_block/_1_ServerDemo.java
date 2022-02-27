@@ -18,7 +18,7 @@ import java.nio.channels.SocketChannel;
  * 一个线程处理一个连接，确实存在问题
  */
 public class _1_ServerDemo {
-    static final Logger log = LoggerFactory.getLogger(_1_ByteBufferDemo.class);
+    static final Logger log = LoggerFactory.getLogger(_1_ServerDemo.class);
     public static void main(String[] args) throws Exception {
         ByteBuffer buffer = ByteBuffer.allocate(16);
         //创建服务器

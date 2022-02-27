@@ -7,6 +7,9 @@ import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
 import io.netty.channel.embedded.EmbeddedChannel;
 
+/**
+ * 用来测试使用   不允许启动客户端和服务端了
+ */
 public class EmbeddedChannelDemo {
     public static void main(String[] args) {
         ChannelInboundHandlerAdapter ch1 = new ChannelInboundHandlerAdapter(){
@@ -37,6 +40,11 @@ public class EmbeddedChannelDemo {
         };
 
         EmbeddedChannel channel = new EmbeddedChannel(ch1,ch2,out1,out2);
+        //入栈
+        channel.writeInbound();
+
+
+        //出栈
         channel.writeOneOutbound(ByteBufAllocator.DEFAULT.buffer().writeBytes("hello".getBytes()));
     }
 }
