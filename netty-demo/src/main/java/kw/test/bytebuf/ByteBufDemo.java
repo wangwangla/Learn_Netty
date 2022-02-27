@@ -31,5 +31,6 @@ public class ByteBufDemo {
                 .append(NEWLINE);
         appendPrettyHexDump(buf, buffer);
         System.out.println(buf.toString());
+
     }
 }

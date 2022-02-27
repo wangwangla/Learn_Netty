@@ -5,6 +5,12 @@ import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 
+/**
+ * 添加handler的顺序，
+ *
+ * 入    从头到尾添加
+ * 出    从后向前
+ */
 public class PipLineDemo {
     public static void main(String[] args) {
         new ServerBootstrap()

@@ -6,9 +6,6 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.ChannelOutboundHandlerAdapter;
 import io.netty.channel.ChannelPromise;
 import io.netty.channel.embedded.EmbeddedChannel;
-import kw.test.buffer.ByteBufferAllocate;
-
-import java.nio.charset.StandardCharsets;
 
 public class EmbeddedChannelDemo {
     public static void main(String[] args) {
