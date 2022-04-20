@@ -3,10 +3,13 @@ package kw.test._2_net._2_unblock;
 import kw.test.utils.ByteBufferUtil;
 
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
+import java.nio.channels.Channel;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
+import java.util.ArrayList;
 
 /***
  * 一个线程 不断的进步遍历
@@ -20,11 +23,16 @@ public class _2_UnBlockServer {
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
         serverSocketChannel.configureBlocking(false); //不堵塞
         serverSocketChannel.bind(new InetSocketAddress(8811));
+        ArrayList<SocketChannel> channels = new ArrayList<>();
         while (true) {
             SocketChannel channel = serverSocketChannel.accept();  //不等待   while会一直空转
             if (channel!=null) {
+                channels.add(channel);
                 channel.configureBlocking(false);
-                int read = channel.read(buffer);
+            }
+            for (int i = 0; i < channels.size(); i++) {
+                buffer.clear();
+                int read = channels.get(i).read(buffer);
                 if (read>0) {
                     buffer.flip();
                     ByteBufferUtil.debugAll(buffer);

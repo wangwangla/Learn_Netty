@@ -14,7 +14,7 @@ public class _1_ClientDemo {
     public static void main(String[] args) throws Exception {
         SocketChannel channel = SocketChannel.open();
         channel.connect(new InetSocketAddress("localhost",8811));
-        SocketAddress address = channel.getLocalAddress();
+//        SocketAddress address = channel.getLocalAddress();
         log.trace("connect");
         channel.write(StandardCharsets.UTF_8.encode("hello"));
         System.in.read();

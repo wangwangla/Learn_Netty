@@ -4,88 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1928b5cc-4680-4b5e-b0f9-62e804a27b83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_selector/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_2_nettysrc/NettyServersrc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/ByteBufferAllocate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/ByteWriteDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/CompactDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_8_CompactDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_1_ByteBufferDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_1_ByteBufferDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_2_ByteBufferReadWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_2_ByteBufferReadWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_3_ByteBufferAllocate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_3_ByteBufferAllocate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_4_ByteBufferRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_4_ByteBufferRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_5_ByteBufferString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_5_ByteBufferString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_6_ByteBufferSplitRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_6_ByteBufferSplitRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/buffer/_7_ByteBufferWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_1_buffer/_7_ByteBufferWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/bytebuf/ByteBufDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/bytebuf/ByteBufDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/embeddedchannel/EmbeddedChannelDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/embeddedchannel/EmbeddedChannelDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/block/_1_ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_1_block/_1_ClientDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/block/_1_ServerDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_1_block/_1_ServerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/mulit/_6_MuliClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/mulit/_6_MuliClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/mulit/_6_MulitThreadServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/mulit/_6_MulitThreadServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/select/_3_SelectorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_3_select/_3_SelectorClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/select/_3_SelectorServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_3_select/_3_SelectorServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/unblock/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/unblock/_2_UnBlockClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/unblock/_2_UnBlockServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/zhanpack/_4_Clinet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/zhanpack/_4_Clinet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/zhanpack/_4_ServerSocket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/zhanpack/_4_ServerSocket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/zhanpack/_5_ClientWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/zhanpack/_5_ClientWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/net/zhanpack/_5_ServerWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/zhanpack/_5_ServerWrite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/pipline/PipLineDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/pipline/PipLineDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/buffer/ByteBufferAllocate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/buffer/ByteWriteDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/buffer/CompactDemo.class" beforeDir="false" />
+    <list default="true" id="1928b5cc-4680-4b5e-b0f9-62e804a27b83" name="Default Changelist" comment="learn">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyClient_Method_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyClient_Method_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyClient_Method_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyServer_Method_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyServer_Method_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_4_zhannianPack/NettyServer_Method_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_5_http/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netty-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/netty-demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_1_block/_1_ClientDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_1_block/_1_ClientDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_2_unblock/_2_UnBlockServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_3_select/_3_SelectorServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_2_net/_3_select/_3_SelectorServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_3_netty/_1_netty/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_2_net/_1_block/_1_ServerDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_2_net/_1_block/_1_ServerDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_2_net/_2_unblock/_2_UnBlockServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_2_net/_2_unblock/_2_UnBlockServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_3_netty/_1_netty/NettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_3_netty/_1_netty/NettyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_3_netty/_1_netty/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_3_netty/_1_netty/NettyServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/kw/test/buffer/_1_ByteBufferDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/buffer/_2_ByteBufferReadWrite.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/bytebuf/ByteBufDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/composite/CompositeByteBufDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/demo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/echo/EchoClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/echo/EchoClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/echo/EchoServer$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/echo/EchoServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/echo/EchoServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/event/EventloopApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopClient$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopClient$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/EventLoopServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/eventloop/server/server.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/jdkfuture/JdkFutureDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/jdkfuture/JdkFutureDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/net/unblock/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/netty/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/netty/NettyClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/netty/NettyClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/netty/NettyServer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/netty/NettyServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/nettyclose/CloseFutureClient$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/nettyclose/CloseFutureClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/nettyfuture/NettyFuture$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/nettyfuture/NettyFuture$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/nettyfuture/NettyFuture.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/promise/NettyPromiseDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/slience/SlienceDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/utils/ByteBufferUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/bytebuf/ByteBufDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/bytebuf/ByteBufDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/embeddedchannel/EmbeddedChannelDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/pipline/PipLineDemo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,20 +72,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="D:/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/kw/test/_3_netty" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/kw/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\lean\Learn_Netty\netty-demo\src\main\java\kw\test\_3_netty" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="kw.test._4_zhannianPack" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.NettyClient">
-    <configuration name="NettyClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.test._3_netty._1_netty.NettyClient" />
+  <component name="RunManager" selected="Application.NettyClient_Method_2">
+    <configuration name="NettyClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.test._4_zhannianPack.NettyClient" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.test._3_netty._1_netty.*" />
+          <option name="PATTERN" value="kw.test._4_zhannianPack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettyServersrc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.test._3_netty._2_nettysrc.NettyServersrc" />
+    <configuration name="NettyClient_Method_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.test._4_zhannianPack.NettyClient_Method_1" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.test._3_netty._2_nettysrc.*" />
+          <option name="PATTERN" value="kw.test._4_zhannianPack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,12 +110,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_1_ByteBufferDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="kw.test._1_buffer._1_ByteBufferDemo" />
+    <configuration name="NettyClient_Method_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.test._4_zhannianPack.NettyClient_Method_2" />
       <module name="netty-demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="kw.test._1_buffer.*" />
+          <option name="PATTERN" value="kw.test._4_zhannianPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer_Method_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.test._4_zhannianPack.NettyServer_Method_1" />
+      <module name="netty-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kw.test._4_zhannianPack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NettyServer_Method_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kw.test._4_zhannianPack.NettyServer_Method_2" />
+      <module name="netty-demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="kw.test._4_zhannianPack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,9 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NettyClient" />
-        <item itemvalue="Application.NettyServersrc" />
-        <item itemvalue="Application._1_ByteBufferDemo" />
+        <item itemvalue="Application.NettyClient_Method_2" />
+        <item itemvalue="Application.NettyServer_Method_2" />
+        <item itemvalue="Application.NettyClient_Method_1" />
+        <item itemvalue="Application.NettyServer_Method_1" />
+        <item itemvalue="Application.NettyClient (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -184,6 +168,14 @@
       <option name="presentableId" value="Default" />
       <updated>1645746071896</updated>
     </task>
+    <task id="LOCAL-00001" summary="learn">
+      <created>1645975655606</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1645975655606</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,6 +189,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="learn" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -227,11 +223,71 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/util/concurrent/SingleThreadEventExecutor.class</url>
-          <line>560</line>
-          <option name="timeStamp" value="31" />
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>484</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>485</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>493</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>494</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>496</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>497</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>500</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>503</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>504</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>506</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>509</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/io/netty/netty-all/4.1.39.Final/netty-all-4.1.39.Final.jar!/io/netty/channel/AbstractChannel.class</url>
+          <line>508</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/netty_demo$NettyServer.ic" NAME="NettyServer Coverage Results" MODIFIED="1646146280451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>kw.test._3_netty._1_netty.*</FILTER>
+    </SUITE>
   </component>
 </project>
