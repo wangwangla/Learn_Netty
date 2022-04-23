@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1928b5cc-4680-4b5e-b0f9-62e804a27b83" name="Default Changelist" comment="自定义类型">
+    <list default="true" id="1928b5cc-4680-4b5e-b0f9-62e804a27b83" name="Default Changelist" comment="自定义数据类型（协议&#10;）">
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/handler/CHeartBeatHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/handler/HeartBeatHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/AppClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/AppClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/AppServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/AppServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/header/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/header/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/message/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/message/MessageBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/message/MessageBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/serialize/MessageSerilze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/serialize/MessageSerilze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer$1$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer$1$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/AppServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/serialize/MessageSerilze$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/kw/test/_6_xieyi/serialize/MessageSerilze$1.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650500756904</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="自定义数据类型（协议&#10;）">
+      <created>1650700959383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1650700959383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,7 +196,8 @@
     <MESSAGE value="learn" />
     <MESSAGE value="save" />
     <MESSAGE value="自定义类型" />
-    <option name="LAST_COMMIT_MESSAGE" value="自定义类型" />
+    <MESSAGE value="自定义数据类型（协议&#10;）" />
+    <option name="LAST_COMMIT_MESSAGE" value="自定义数据类型（协议&#10;）" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -236,7 +249,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/AppServer.java</url>
-          <line>27</line>
+          <line>29</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -248,11 +261,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java</url>
           <line>50</line>
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java</url>
@@ -276,13 +284,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="59" />
+          <line>38</line>
+          <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/NettyMessageEnDecoder.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="60" />
+          <line>61</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/kw/test/_6_xieyi/handler/CHeartBeatHandler.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="62" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

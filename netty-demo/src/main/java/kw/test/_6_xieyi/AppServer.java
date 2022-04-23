@@ -8,6 +8,7 @@ import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.string.StringDecoder;
+import kw.test._6_xieyi.handler.HeartBeatHandler;
 
 public class AppServer {
     public static void main(String[] args){
@@ -21,6 +22,7 @@ public class AppServer {
                         protected void initChannel(NioSocketChannel ch) throws Exception {
 //                            ch.pipeline().addLast(new StringDecoder());
                             ch.pipeline().addLast(new NettyMessageEnDecoder());
+                            ch.pipeline().addLast(new HeartBeatHandler());
                             ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
                                 @Override
                                 public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

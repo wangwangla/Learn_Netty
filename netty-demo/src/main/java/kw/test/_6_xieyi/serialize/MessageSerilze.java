@@ -15,7 +15,7 @@ public enum MessageSerilze {
             ) {
                 oo = ois.readObject();
             }catch (Exception e){
-                e.printStackTrace();
+ //               e.printStackTrace();
             }
             return (T)oo;
         }
