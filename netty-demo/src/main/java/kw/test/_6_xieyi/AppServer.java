@@ -19,7 +19,8 @@ public class AppServer {
                     .childHandler(new ChannelInitializer<NioSocketChannel>() {
                         @Override
                         protected void initChannel(NioSocketChannel ch) throws Exception {
-                            ch.pipeline().addLast(new StringDecoder());
+//                            ch.pipeline().addLast(new StringDecoder());
+                            ch.pipeline().addLast(new NettyMessageEnDecoder());
                             ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
                                 @Override
                                 public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {

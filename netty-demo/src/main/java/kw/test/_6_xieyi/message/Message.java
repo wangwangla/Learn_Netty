@@ -2,7 +2,9 @@ package kw.test._6_xieyi.message;
 
 import kw.test._6_xieyi.header.Header;
 
-public class Message {
+import java.io.Serializable;
+
+public class Message implements Serializable {
     private Header header;
     private MessageBody body;
 

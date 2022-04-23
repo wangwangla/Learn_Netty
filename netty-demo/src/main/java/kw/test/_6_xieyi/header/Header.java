@@ -1,9 +1,10 @@
 package kw.test._6_xieyi.header;
 
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
-public final class Header {
+public final class Header implements Serializable {
     private int crcCode = 0x00002;//魔数
     private int length;//message length
     private long sessionId;//通话session

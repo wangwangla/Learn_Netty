@@ -44,7 +44,6 @@ public class NettyMessageEnDecoder extends MessageToMessageCodec<ByteBuf,Message
             buffer.writeInt(0);
             out.add(buffer);
         }
-
     }
 
     @Override
@@ -60,7 +59,7 @@ public class NettyMessageEnDecoder extends MessageToMessageCodec<ByteBuf,Message
         int bodyLength = msg.readInt();
         byte[] b = new byte[bodyLength];
         msg.readBytes(b);
-        MessageBody decoder = MessageSerilze.java.decoder(b, MessageBody.class);
+        MessageBody decoder = MessageSerilze.java.decoder(b);
         Message message  = new Message();
         message.setHeader(header);
         message.setBody(decoder);
