@@ -13,6 +13,8 @@ import io.netty.handler.codec.string.StringDecoder;
 
 /**
  * 使用lineBaseFrameDecoder
+ *
+ * 这个是使用回车分隔符
  */
 public class NettyServer_Method_1 {
     static  int i = 0;

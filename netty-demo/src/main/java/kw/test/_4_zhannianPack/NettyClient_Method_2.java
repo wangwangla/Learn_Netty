@@ -12,7 +12,8 @@ import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.LineBasedFrameDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
-/*
+/**
+ *  使用指定符号分隔符
 * write msgwrite msg
 write msg
 write msgwrite msg

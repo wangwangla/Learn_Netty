@@ -12,6 +12,9 @@ import io.netty.handler.codec.DelimiterBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
+
 /*
 * write msgwrite msg
 write msg
@@ -26,8 +29,9 @@ public class NettyClient_Method_3 {
                 .handler(new ChannelInitializer<NioSocketChannel>() {
                     @Override
                     protected void initChannel(NioSocketChannel ch) throws Exception {
-//                        ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024));
-                        ch.pipeline().addLast(new StringEncoder());
+                        ch.pipeline().addLast(new LengthFieldBasedFrameDecoder(1024,0,4));
+//                        ch.pipeline().addLast(new StringEncoder());
+                        ch.pipeline().addLast(new MessageDecoder());
                         ch.pipeline().addLast(new ChannelInboundHandlerAdapter(){
                             @Override
                             public void channelActive(ChannelHandlerContext ctx) throws Exception {
@@ -44,7 +48,13 @@ public class NettyClient_Method_3 {
 
 //                                粘包
                                 for (int i = 0; i < 1000; i++) {
-                                    ctx.writeAndFlush("write msg_");
+//                                    ByteBuffer hello = StandardCharsets.UTF_8.encode("hello");
+//                                    byte[] b = new byte[8];
+                                    byte[] bytes = "hello".getBytes();
+                                    ByteBuf buffer = ctx.alloc().buffer();
+                                    buffer.writeInt(bytes.length);
+                                    buffer.writeBytes(bytes);
+                                    ctx.writeAndFlush(buffer);
                                 }
                             }
                         });
